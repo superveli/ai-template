@@ -5,7 +5,6 @@ description = "Multi-tenant SaaS boilerplate built on FastAPI + authx"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }
-authors = [{ name = "Yasser Tahiri", email = "hello@yezz.me" }]
 
 dependencies = [
     "fastapi>=0.138.2",

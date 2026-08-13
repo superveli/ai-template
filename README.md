@@ -1,10 +1,6 @@
 # AI Template
 
-> Multi-tenant SaaS boilerplate built on FastAPI + [authx](https://github.com/yezz123/authx) + Next.js. Every feature toggleable via env vars; ship a production-ready SaaS in a weekend.
-
-[![Backend](https://github.com/yezz123/ai-template/actions/workflows/backend.yaml/badge.svg)](https://github.com/yezz123/ai-template/actions/workflows/backend.yaml)
-[![Frontend](https://github.com/yezz123/ai-template/actions/workflows/frontend.yaml/badge.svg)](https://github.com/yezz123/ai-template/actions/workflows/frontend.yaml)
-[![Admin](https://github.com/yezz123/ai-template/actions/workflows/admin.yaml/badge.svg)](https://github.com/yezz123/ai-template/actions/workflows/admin.yaml)
+> Multi-tenant SaaS boilerplate built on FastAPI + Next.js. Every feature toggleable via env vars; ship a production-ready SaaS in a weekend.
 
 <!-- markdownlint-disable MD033 -->
 <p align="center">
@@ -57,9 +53,6 @@ Prereqs: **uv** &ge; 0.5, **bun** &ge; 1.3, **Docker**.
 ### Option A: run everything with Docker (recommended)
 
 ```bash
-git clone https://github.com/yezz123/ai-template && cd ai-template
-cp .env.example .env
-
 make stack-build
 make stack-up
 make stack-create-admin email=admin@example.com password=change-me-admin-password
@@ -87,7 +80,7 @@ missing, the Makefile falls back to `.env.example` for smoke testing.
 ### Option B: run infra in Docker + apps locally (fast inner loop)
 
 ```bash
-git clone https://github.com/yezz123/ai-template && cd ai-template
+git clone https://github.com/superveli/ai-template && cd ai-template
 cp .env.example .env
 
 make bootstrap          # uv sync + bun install
